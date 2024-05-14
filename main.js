@@ -87,15 +87,39 @@ ScrollReveal().reveal(".quote", {
 ScrollReveal().reveal(".card-1", {
   ...scrollRevealOption,
   origin: "right",
-  delay: 3000,
+  delay: 2000,
 });
 ScrollReveal().reveal(".card-2", {
   ...scrollRevealOption,
   origin: "top",
-  delay: 3000,
+  delay: 2000,
 });
 ScrollReveal().reveal(".card-3", {
   ...scrollRevealOption,
   origin: "left",
+  delay: 2000,
+});
+
+ScrollReveal().reveal(".review-border--1", {
+  ...scrollRevealOption,
+  origin: "bottom",
+  delay: 500,
+});
+
+ScrollReveal().reveal(".review-border--2", {
+  ...scrollRevealOption,
+  origin: "left",
+  delay: 1000,
+});
+
+ScrollReveal().reveal(".review-border--3", {
+  ...scrollRevealOption,
+  origin: "left",
+  delay: 2000,
+});
+
+ScrollReveal().reveal(".review-border--4", {
+  ...scrollRevealOption,
+  origin: "bottom",
   delay: 3000,
 });

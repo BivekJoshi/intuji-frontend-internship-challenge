@@ -227,7 +227,9 @@ nav {
   height: 21.36px;
 }
 
-.card-1,.card-2,.card-3 {
+.card-1,
+.card-2,
+.card-3 {
   padding: 16px;
   border-radius: 16px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -246,6 +248,62 @@ nav {
 .p-card {
   padding: 20px 10px;
   color: dimgray;
+}
+
+.review--card {
+  position: relative;
+}
+.review-border--1 {
+  background-color: var(--white);
+  width: 300px;
+  padding: 10px;
+  display: flex;
+  gap: 16px;
+  position: absolute;
+  top: 52px;
+  left: 60px;
+  border-radius: 8px;
+}
+.review-border--2 {
+  background-color: var(--white);
+  width: 300px;
+  padding: 10px;
+  display: flex;
+  gap: 16px;
+  position: absolute;
+  top: 137px;
+  left: 106px;
+  border-radius: 8px;
+}
+.review-border--3 {
+  background-color: var(--white);
+  width: 300px;
+  padding: 10px;
+  display: flex;
+  gap: 16px;
+  position: absolute;
+  top: 223px;
+  left: 145px;
+  border-radius: 8px;
+}
+.review-border--4 {
+  background-color: var(--white);
+  width: 300px;
+  padding: 10px;
+  display: flex;
+  gap: 16px;
+  position: absolute;
+  top: 306px;
+  left: 60px;
+  border-radius: 8px;
+}
+.badge {
+  font-weight: bold;
+  color: var(--tertiary-color);
+  background-color: rgb(235, 235, 247);
+  padding:6px;
+  width:fit-content;
+  border-radius: 16px;
 }
 @media (width > 768px) {
   nav {
@@ -389,7 +447,51 @@ nav {
   .header__btns {
     justify-content: flex-start;
   }
-  
+
+  .review-border--1 {
+    background-color: var(--white);
+    width: 400px;
+    padding: 10px;
+    display: flex;
+    gap: 16px;
+    position: absolute;
+    top: 52px;
+    left: 60px;
+    border-radius: 8px;
+  }
+  .review-border--2 {
+    background-color: var(--white);
+    width: 400px;
+    padding: 10px;
+    display: flex;
+    gap: 16px;
+    position: absolute;
+    top: 137px;
+    left: 106px;
+    border-radius: 8px;
+  }
+  .review-border--3 {
+    background-color: var(--white);
+    width: 400px;
+    padding: 10px;
+    display: flex;
+    gap: 16px;
+    position: absolute;
+    top: 223px;
+    left: 145px;
+    border-radius: 8px;
+  }
+  .review-border--4 {
+    background-color: var(--white);
+    width: 400px;
+    padding: 10px;
+    display: flex;
+    gap: 16px;
+    position: absolute;
+    top: 306px;
+    left: 60px;
+    border-radius: 8px;
+  }
 }
 
 @media (width<768px) {
