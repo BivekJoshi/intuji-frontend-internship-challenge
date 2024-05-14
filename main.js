@@ -123,3 +123,10 @@ ScrollReveal().reveal(".review-border--4", {
   origin: "bottom",
   delay: 3000,
 });
+
+
+ScrollReveal().reveal(".animate", {
+  ...scrollRevealOption,
+  origin: "bottom",
+  delay: 1000,
+});
