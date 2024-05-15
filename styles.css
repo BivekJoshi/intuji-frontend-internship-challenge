@@ -702,4 +702,15 @@ nav {
     /* overflow: hidden;
     max-height: 684px; */
   }
+  .card-1,
+.card-2,
+.card-3 {
+  padding: 16px;
+  border-radius: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  min-width: 300px;
+  flex: 1;
+  background-color: #ffffff;
+}
 }
