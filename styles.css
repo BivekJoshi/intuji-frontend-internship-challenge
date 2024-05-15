@@ -327,7 +327,21 @@ nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin:0 80px
+  margin:0 80px;
+}
+
+.card--blog{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width:100%;
+  margin-top: 20px;
+  gap:1rem
+}
+
+.card--blog--1,.card--blog--2,.card--blog--3{
+  flex: 1;
+  background-color: #ffffff;
 }
 @media (width > 768px) {
   nav {

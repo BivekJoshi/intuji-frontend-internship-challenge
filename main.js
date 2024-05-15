@@ -100,6 +100,21 @@ ScrollReveal().reveal(".card-3", {
   delay: 2000,
 });
 
+ScrollReveal().reveal(".card--blog--1", {
+  ...scrollRevealOption,
+  origin: "left",
+  delay: 2000,
+});
+ScrollReveal().reveal(".card--blog--2", {
+  ...scrollRevealOption,
+  origin: "top",
+  delay: 2000,
+});
+ScrollReveal().reveal(".card--blog--3", {
+  ...scrollRevealOption,
+  origin: "right",
+  delay: 2000,
+});
 ScrollReveal().reveal(".review-border--1", {
   ...scrollRevealOption,
   origin: "bottom",
@@ -121,7 +136,7 @@ ScrollReveal().reveal(".review-border--3", {
 ScrollReveal().reveal(".review-border--4", {
   ...scrollRevealOption,
   origin: "bottom",
-  delay: 3000,
+  delay: 1000,
 });
 
 
@@ -132,7 +147,7 @@ ScrollReveal().reveal(".animate", {
 });
 
 const targetNumber = 252;
-const duration = 2000; 
+const duration = 3000; 
 
 const increment = targetNumber / (duration / 16);
 
@@ -145,7 +160,7 @@ function updateNumber(currentNumber) {
 }
 
 const targetNumber1 = 30;
-const duration1 = 2000; 
+const duration1 = 3500; 
 
 const increment1 = targetNumber1 / (duration1 / 16);
 
