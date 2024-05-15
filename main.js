@@ -87,7 +87,7 @@ ScrollReveal().reveal(".quote", {
 ScrollReveal().reveal(".card-1", {
   ...scrollRevealOption,
   origin: "right",
-  delay: 2000,
+  delay: 500,
 });
 ScrollReveal().reveal(".card-2", {
   ...scrollRevealOption,
@@ -130,3 +130,33 @@ ScrollReveal().reveal(".animate", {
   origin: "bottom",
   delay: 1000,
 });
+
+const targetNumber = 252;
+const duration = 2000; 
+
+const increment = targetNumber / (duration / 16);
+
+function updateNumber(currentNumber) {
+  document.getElementById('number').textContent = Math.round(currentNumber);
+
+  if (currentNumber < targetNumber) {
+    requestAnimationFrame(() => updateNumber(currentNumber + increment));
+  }
+}
+
+const targetNumber1 = 30;
+const duration1 = 2000; 
+
+const increment1 = targetNumber1 / (duration1 / 16);
+
+function updateNumber1(currentNumber1) {
+  document.getElementById('number1').textContent = Math.round(currentNumber1);
+
+  if (currentNumber1 < targetNumber1) {
+    requestAnimationFrame(() => updateNumber1(currentNumber1 + increment1));
+  }
+}
+
+updateNumber1(0);
+
+updateNumber(0);

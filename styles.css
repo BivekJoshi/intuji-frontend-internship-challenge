@@ -164,6 +164,7 @@ nav {
   align-items: center;
   justify-content: center;
   gap: 2rem;
+  flex-wrap: wrap;
 }
 
 .header__btns img {
@@ -235,6 +236,7 @@ nav {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   max-width: 300px;
   flex: 1;
+  background-color: #ffffff;
 }
 
 .card___body {
@@ -243,6 +245,12 @@ nav {
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+.card___body___main {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0px;
 }
 
 .p-card {
@@ -301,9 +309,25 @@ nav {
   font-weight: bold;
   color: var(--tertiary-color);
   background-color: rgb(235, 235, 247);
-  padding:6px;
-  width:fit-content;
+  padding: 6px;
+  width: fit-content;
   border-radius: 16px;
+}
+.review--img {
+  height: 400px;
+  width: 500px;
+}
+.features-main{
+  padding: 130px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.card--main{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin:0 80px
 }
 @media (width > 768px) {
   nav {
@@ -505,5 +529,67 @@ nav {
     width: 137.15px;
     height: 21.36px;
     margin: 1rem;
+  }
+
+  .review--img {
+    height: 400px;
+    width: 350px;
+  }
+  .features-main{
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .review-border--1 {
+    background-color: var(--white);
+    width: 300px;
+    padding: 10px;
+    display: flex;
+    gap: 16px;
+    position: absolute;
+    top: 52px;
+    left: 20px;
+    border-radius: 8px;
+  }
+  .review-border--2 {
+    background-color: var(--white);
+    width: 300px;
+    padding: 10px;
+    display: flex;
+    gap: 16px;
+    position: absolute;
+    top: 137px;
+    left: 20px;
+    border-radius: 8px;
+  }
+  .review-border--3 {
+    background-color: var(--white);
+    width: 300px;
+    padding: 10px;
+    display: flex;
+    gap: 16px;
+    position: absolute;
+    top: 223px;
+    left: 20px;
+    border-radius: 8px;
+  }
+  .review-border--4 {
+    background-color: var(--white);
+    width: 300px;
+    padding: 10px;
+    display: flex;
+    gap: 16px;
+    position: absolute;
+    top: 306px;
+    left: 20px;
+    border-radius: 8px;
+  }
+  .card--main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin:0 10px;
+    gap:1rem
   }
 }
