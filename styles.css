@@ -29,6 +29,7 @@
   /* background-image: url("./assets/Background.png");
   background-size: cover;
   background-position: center; */
+  background-color: rgb(113, 234, 243);
 }
 img {
   display: flex;
