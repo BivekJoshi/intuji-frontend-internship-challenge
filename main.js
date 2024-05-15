@@ -148,6 +148,7 @@ ScrollReveal().reveal(".animate", {
 
 const targetNumber = 252;
 const duration = 4000; 
+let isAnimating = false;
 
 const increment = targetNumber / (duration / 16);
 
@@ -161,6 +162,7 @@ function updateNumber(currentNumber) {
 
 const targetNumber1 = 30;
 const duration1 = 3500; 
+let isAnimating1 = false;
 
 const increment1 = targetNumber1 / (duration1 / 16);
 
@@ -172,6 +174,32 @@ function updateNumber1(currentNumber1) {
   }
 }
 
-updateNumber1(0);
 
-updateNumber(0);
+window.addEventListener('scroll', () => {
+  if (!isAnimating1) {
+    isAnimating1 = true;
+    updateNumber1(0);
+  }
+});
+
+window.addEventListener('scroll', () => {
+  if (!isAnimating) {
+    isAnimating = true;
+    updateNumber(0);
+  }
+});
+
+ScrollReveal().reveal(".animate", {
+  ...scrollRevealOption,
+  origin: "bottom",
+  delay: 1000,
+});
+
+ScrollReveal().reveal(".number", {
+  origin: "bottom",
+  // delay: 100,
+});
+ScrollReveal().reveal(".number1", {
+  origin: "bottom",
+  // delay: 1000,
+});
