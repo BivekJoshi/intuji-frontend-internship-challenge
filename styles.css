@@ -360,7 +360,7 @@ nav {
   padding: 16px;
   border-radius: 12px;
   background-color: #ffffff;
-  width:var(--max-width);
+  width:600px;
   /* max-width:550px */
 }
 .question-accondo{
