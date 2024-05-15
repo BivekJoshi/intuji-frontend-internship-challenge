@@ -382,6 +382,26 @@ nav {
   flex-direction: column;
   gap: 0.5rem;
 }
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0); 
+  }
+  50% {
+    transform: translateY(-10px); 
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.get-started {
+  background-color: #FF7F5C;
+  padding: 16px;
+  width: fit-content;
+  border-radius: 8px;
+  animation: bounce 1s infinite; 
+}
 @media (width > 768px) {
   nav {
     position: static;
@@ -457,6 +477,7 @@ nav {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
     transition: 0.3s;
     cursor: pointer;
+    animation: bounce 1s infinite; 
   }
 
   .btn___no {

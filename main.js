@@ -147,7 +147,7 @@ ScrollReveal().reveal(".animate", {
 });
 
 const targetNumber = 252;
-const duration = 3000; 
+const duration = 4000; 
 
 const increment = targetNumber / (duration / 16);
 
