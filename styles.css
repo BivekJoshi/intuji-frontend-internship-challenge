@@ -235,8 +235,8 @@ nav {
   padding: 16px;
   border-radius: 16px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  max-width: 380px;
-  min-width: 370px;
+  max-width: 370px;
+  min-width: 360px;
   flex: 1;
   background-color: #ffffff;
 }
@@ -359,6 +359,9 @@ nav {
   border: 1px solid #CFCFCF;
   padding: 16px;
   border-radius: 12px;
+  background-color: #ffffff;
+  width:var(--max-width);
+  /* max-width:550px */
 }
 .question-accondo{
   display: flex;
@@ -677,5 +680,26 @@ nav {
   .cta--main{
     padding: 30px;
     color: var(--white);
+  }
+  .question {
+    border: 1px solid #CFCFCF;
+    padding: 16px;
+    border-radius: 12px;
+    background-color: #ffffff;
+    width:360px
+  }
+  .header__content h1 {
+    margin-bottom: .5rem;
+    font-size: 30px;
+    font-weight: 800;
+    font-family: var(--header-font);
+    line-height: 2rem;
+    color: var(--text-dark);
+  }
+  .header__image img {
+    max-width: 280px;
+    margin-inline: auto;
+    /* overflow: hidden;
+    max-height: 684px; */
   }
 }
