@@ -235,8 +235,8 @@ nav {
   padding: 16px;
   border-radius: 16px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  max-width: 370px;
-  min-width: 360px;
+  max-width: 360px;
+  min-width: 350px;
   flex: 1;
   background-color: #ffffff;
 }
