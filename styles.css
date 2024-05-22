@@ -356,33 +356,33 @@ nav {
 }
 
 .question {
-  border: 1px solid #CFCFCF;
+  border: 1px solid #cfcfcf;
   padding: 16px;
   border-radius: 12px;
   background-color: #ffffff;
-  width:600px;
+  width: 600px;
   /* max-width:550px */
 }
-.question-accondo{
+.question-accondo {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap:2rem
+  gap: 2rem;
 }
-.icon{
-  width:20px;
+.icon {
+  width: 20px;
   height: 20px;
 }
-.cta{
-  width:100%;
-  height:538px;
+.cta {
+  width: 100%;
+  height: 538px;
   position: relative;
 }
-.cta--main{
+.cta--main {
   padding: 130px;
-  color:var(--white)
+  color: var(--white);
 }
-.footer{
+.footer {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
@@ -390,10 +390,10 @@ nav {
 
 @keyframes bounce {
   0% {
-    transform: translateY(0); 
+    transform: translateY(0);
   }
   50% {
-    transform: translateY(-10px); 
+    transform: translateY(-10px);
   }
   100% {
     transform: translateY(0);
@@ -401,12 +401,13 @@ nav {
 }
 
 .get-started {
-  background-color: #FF7F5C;
+  background-color: #ff7f5c;
   padding: 16px;
   width: fit-content;
   border-radius: 8px;
-  animation: bounce 1s infinite; 
+  animation: bounce 1s infinite;
 }
+
 @media (width > 768px) {
   nav {
     position: static;
@@ -482,7 +483,7 @@ nav {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
     transition: 0.3s;
     cursor: pointer;
-    animation: bounce 1s infinite; 
+    animation: bounce 1s infinite;
   }
 
   .btn___no {
@@ -677,19 +678,19 @@ nav {
     margin: 0 10px;
     gap: 1rem;
   }
-  .cta--main{
+  .cta--main {
     padding: 30px;
     color: var(--white);
   }
   .question {
-    border: 1px solid #CFCFCF;
+    border: 1px solid #cfcfcf;
     padding: 16px;
     border-radius: 12px;
     background-color: #ffffff;
-    width:360px
+    /* width: 360px; */
   }
   .header__content h1 {
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
     font-size: 30px;
     font-weight: 800;
     font-family: var(--header-font);
@@ -703,14 +704,54 @@ nav {
     max-height: 684px; */
   }
   .card-1,
-.card-2,
-.card-3 {
-  padding: 16px;
-  border-radius: 16px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  max-width: 300px;
-  min-width: 300px;
-  flex: 1;
-  background-color: #ffffff;
+  .card-2,
+  .card-3 {
+    padding: 16px;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    min-width: 300px;
+    flex: 1;
+    background-color: #ffffff;
+  }
 }
+
+.accordion {
+  width: 100%;
+  margin: auto;
+}
+
+.accordion-item {
+  margin-bottom: 10px;
+}
+
+.accordion-button {
+  width: 100%;
+  text-align: left;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  border: 1px solid #cfcfcf;
+  padding: 16px;
+  border-radius: 12px;
+}
+
+.accordion-button:hover {
+  background-color: #c7c7c7;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #fffefe;
+  padding-left: 15px;
+}
+
+.accordion-content p {
+  padding: 15px;
+  margin: 0;
 }

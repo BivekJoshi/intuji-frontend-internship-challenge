@@ -203,3 +203,23 @@ ScrollReveal().reveal(".number1", {
   origin: "bottom",
   // delay: 1000,
 });
+
+// script.js
+document.addEventListener("DOMContentLoaded", function() {
+  var accordionButtons = document.querySelectorAll(".accordion-button");
+
+  accordionButtons.forEach(function(button) {
+    button.addEventListener("click", function() {
+      var content = this.nextElementSibling;
+
+      if (content.style.maxHeight) {
+        content.style.maxHeight = null;
+      } else {
+        document.querySelectorAll(".accordion-content").forEach(function(el) {
+          el.style.maxHeight = null;
+        });
+        content.style.maxHeight = content.scrollHeight + "px";
+      }
+    });
+  });
+});
