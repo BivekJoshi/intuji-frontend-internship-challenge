@@ -336,6 +336,7 @@ nav {
   flex-wrap: wrap;
   justify-content: space-around;
   margin: 0 80px;
+  gap:1rem
 }
 
 .card--blog {
