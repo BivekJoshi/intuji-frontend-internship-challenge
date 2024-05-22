@@ -747,7 +747,9 @@ nav {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
-  background-color: #fffefe;
+  background-color: #ffffff;
+  border-bottom-left-radius: 10px;  /* Adjust the value as needed */
+  border-bottom-right-radius: 10px; 
   padding-left: 15px;
 }
 
