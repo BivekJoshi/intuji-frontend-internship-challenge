@@ -81,7 +81,7 @@ ScrollReveal().reveal(".logo-7 img", {
 ScrollReveal().reveal(".quote", {
   ...scrollRevealOption,
   origin: "bottom",
-  delay: 1500,
+  delay: 500,
 });
 
 ScrollReveal().reveal(".card-1", {
